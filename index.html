@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Facundo Olivieri</title>
+<meta name="description" content="Portfolio de Facundo Olivieri, Desarrollador Web con foco en Backend (Java, Spring Boot, Spring Cloud).">
+<meta name="theme-color" content="#060b18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- @@BODY_START@@ -->
+
+<!-- Cada data-fragment se reemplaza por el HTML del archivo indicado (ver js/fragments.js) -->
+<div data-fragment="fragments/icons.html"></div>
+
+<div class="ambient" aria-hidden="true">
+  <div class="ambient__grid"></div>
+  <div class="ambient__orb ambient__orb--a"></div>
+  <div class="ambient__orb ambient__orb--b"></div>
+</div>
+
+<div data-fragment="fragments/nav.html"></div>
+
+<main class="main">
+  <div data-fragment="fragments/about.html"></div>
+  <div data-fragment="fragments/skills.html"></div>
+  <div data-fragment="fragments/projects.html"></div>
+  <div data-fragment="fragments/contact.html"></div>
+  <div data-fragment="fragments/footer.html"></div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- @@BODY_END@@ -->
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

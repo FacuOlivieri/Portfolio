@@ -1,0 +1,70 @@
+<!-- EDITAR: reemplazá títulos, descripciones y los enlaces de GitHub por los de tus repos -->
+<section class="section" id="proyectos" aria-labelledby="t-proy">
+  <header class="section__head reveal">
+    <p class="eyebrow">@GetMapping("/proyectos")</p>
+    <h2 class="section__title" id="t-proy">Proyectos</h2>
+    <p class="section__lead">Una selección de trabajos donde aplico lo que voy aprendiendo.</p>
+  </header>
+
+  <div class="projects">
+    <article class="project reveal">
+      <div class="project__top">
+        <span class="project__ico"><svg class="ico"><use href="#i-network"/></svg></span>
+        <span class="project__kind">Microservicios</span>
+      </div>
+      <h3 class="project__title">Tienda en microservicios</h3>
+      <p class="project__desc">
+        Backend de e-commerce dividido en servicios de productos, carrito y pedidos, con
+        API Gateway, descubrimiento de servicios, balanceo de carga y Circuit Breaker para
+        tolerar caídas. Todo levantado con Docker Compose.
+      </p>
+      <ul class="tags">
+        <li>Spring Cloud</li><li>Resilience4j</li><li>Docker</li><li>MySQL</li>
+      </ul>
+      <a class="btn btn--repo" href="https://github.com/TU-USUARIO/tienda-microservicios" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-branch"/></svg> Ver en GitHub
+        <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </article>
+
+    <article class="project reveal">
+      <div class="project__top">
+        <span class="project__ico"><svg class="ico"><use href="#i-db"/></svg></span>
+        <span class="project__kind">API REST</span>
+      </div>
+      <h3 class="project__title">API de gestión de stock</h3>
+      <p class="project__desc">
+        API REST con arquitectura MVC por capas para administrar productos, precios, stock y
+        clientes. Validaciones, manejo global de excepciones, DTOs y tests unitarios con
+        JUnit y Mockito.
+      </p>
+      <ul class="tags">
+        <li>Spring Boot</li><li>JPA</li><li>JUnit</li><li>Mockito</li>
+      </ul>
+      <a class="btn btn--repo" href="https://github.com/TU-USUARIO/api-gestion-stock" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-branch"/></svg> Ver en GitHub
+        <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </article>
+
+    <article class="project reveal">
+      <div class="project__top">
+        <span class="project__ico"><svg class="ico"><use href="#i-code"/></svg></span>
+        <span class="project__kind">Full stack</span>
+      </div>
+      <h3 class="project__title">Presupuestador web</h3>
+      <p class="project__desc">
+        Aplicación para armar presupuestos: búsqueda de productos, cálculo de totales con
+        descuentos e impuestos, historial por cliente y exportación. Frontend en JavaScript
+        puro consumiendo una API en Spring Boot.
+      </p>
+      <ul class="tags">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQL Server</li>
+      </ul>
+      <a class="btn btn--repo" href="https://github.com/TU-USUARIO/presupuestador-web" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-branch"/></svg> Ver en GitHub
+        <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </article>
+  </div>
+</section>
