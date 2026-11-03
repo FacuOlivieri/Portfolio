@@ -8,23 +8,33 @@
 
   <div class="projects">
     <article class="project reveal">
+      <a class="project__shot" href="http://129.121.34.54/login" target="_blank" rel="noopener" aria-label="Abrir la demo de Bazar">
+        <img src="assets/projects/bazar.jpg" alt="Pantalla de ventas del sistema Bazar · Gestión del local" loading="lazy" width="1280" height="720">
+      </a>
       <div class="project__top">
-        <span class="project__ico"><svg class="ico"><use href="#i-network"/></svg></span>
-        <span class="project__kind">Microservicios</span>
+        <span class="project__ico"><svg class="ico"><use href="#i-box"/></svg></span>
+        <span class="project__kind">Full stack · En producción</span>
       </div>
-      <h3 class="project__title">Tienda en microservicios</h3>
+      <h3 class="project__title">Bazar · Gestión del local</h3>
       <p class="project__desc">
-        Backend de e-commerce dividido en servicios de productos, carrito y pedidos, con
-        API Gateway, descubrimiento de servicios, balanceo de carga y Circuit Breaker para
-        tolerar caídas. Todo levantado con Docker Compose.
+        Sistema de gestión para un bazar real: ventas, stock de productos, clientes, cupones
+        de descuento y resumen del día. Usuarios con roles y permisos, login con JWT y API REST
+        por capas en Spring Boot, consumida por un frontend en React. Desplegado con Docker
+        Compose y Nginx.
       </p>
       <ul class="tags">
-        <li>Spring Cloud</li><li>Resilience4j</li><li>Docker</li><li>MySQL</li>
+        <li>Spring Boot</li><li>Spring Security</li><li>JWT</li><li>React</li><li>MySQL</li><li>Docker</li>
       </ul>
-      <a class="btn btn--repo" href="https://github.com/TU-USUARIO/tienda-microservicios" target="_blank" rel="noopener">
-        <svg class="ico"><use href="#i-branch"/></svg> Ver en GitHub
-        <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
-      </a>
+      <div class="project__actions">
+        <a class="btn btn--repo btn--demo" href="http://129.121.34.54/login" target="_blank" rel="noopener">
+          <svg class="ico"><use href="#i-globe"/></svg> Ver demo
+          <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="btn btn--repo" href="https://github.com/FacuOlivieri/Bazar" target="_blank" rel="noopener">
+          <svg class="ico"><use href="#i-branch"/></svg> Ver en GitHub
+          <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
     </article>
 
     <article class="project reveal">
