@@ -2,7 +2,7 @@ const ERROR_MESSAGES = {
   "f-nombre": { valueMissing: "Contame tu nombre.", tooShort: "El nombre es muy corto." },
   "f-email": { valueMissing: "Necesito un email para responderte.", typeMismatch: "Revisá el formato del email (ej: nombre@dominio.com)." },
   "f-asunto": { valueMissing: "Agregá un asunto.", tooShort: "El asunto es muy corto." },
-  "f-mensaje": { valueMissing: "Escribí tu mensaje.", tooShort: "El mensaje debe tener al menos 10 caracteres." },
+  "f-mensaje": { valueMissing: "Escribí tu mensaje." },
 };
 
 const trimLeadingSpaces = (input) => {

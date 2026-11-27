@@ -18,13 +18,17 @@ const openMailDraft = (data) => {
   window.location.href = buildMailtoLink(data);
 };
 
-// Envía por endpoint si está configurado; si no, prepara el mail. Devuelve los textos de éxito.
+// Envía por endpoint si está configurado; si no, prepara el mail. Devuelve si salió y los textos.
 export const deliverMessage = async (data) => {
   if (CONFIG.formEndpoint) {
     await postToEndpoint(data);
-    return { status: "¡Mensaje enviado! Te respondo pronto.", toast: "201 Created · mensaje enviado" };
+    return { sent: true, status: "¡Mensaje enviado! Te respondo pronto.", toast: "201 Created · mensaje enviado" };
   }
 
   openMailDraft(data);
-  return { status: "Se abrió tu app de correo con el mensaje listo para enviar.", toast: "Mensaje preparado en tu correo" };
+  return {
+    sent: false,
+    status: `Completá el envío en tu app de correo. Si no se abrió, escribime a ${CONFIG.email}.`,
+    toast: "Abriendo tu correo…",
+  };
 };

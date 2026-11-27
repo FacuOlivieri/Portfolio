@@ -8,9 +8,9 @@
   <div class="contact">
     <ul class="contact__info reveal">
       <li>
-        <button class="info" type="button" data-copy="facu.olivieri7@gmail.com">
+        <button class="info" type="button" data-copy>
           <span class="info__ico"><svg class="ico"><use href="#i-mail"/></svg></span>
-          <span class="info__body"><span class="info__label">Email</span>facu.olivieri7@gmail.com</span>
+          <span class="info__body"><span class="info__label">Email</span><span data-email></span></span>
           <span class="info__action"><svg class="ico"><use href="#i-copy"/></svg><span class="info__hint">Copiar</span></span>
         </button>
       </li>
@@ -54,7 +54,7 @@
         <span class="field__error" data-for="f-asunto"></span>
       </div>
       <div class="field">
-        <textarea id="f-mensaje" name="mensaje" rows="6" placeholder=" " required minlength="10" maxlength="1000"></textarea>
+        <textarea id="f-mensaje" name="mensaje" rows="6" placeholder=" " required maxlength="1000"></textarea>
         <label for="f-mensaje">Mensaje</label>
         <span class="field__count" id="f-count">0 / 1000</span>
         <span class="field__error" data-for="f-mensaje"></span>

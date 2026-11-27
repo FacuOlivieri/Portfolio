@@ -1,3 +1,4 @@
+import { CONFIG } from "./config.js";
 import { showToast } from "./toast.js";
 
 const HINT_RESET_MS = 1800;
@@ -15,14 +16,18 @@ const openMailClient = (email) => {
 };
 
 const copyEmail = async (button) => {
-  const email = button.dataset.copy;
   try {
-    await navigator.clipboard.writeText(email);
+    await navigator.clipboard.writeText(CONFIG.email);
     showToast("Email copiado al portapapeles");
     flashCopiedHint(button);
   } catch {
-    openMailClient(email);
+    openMailClient(CONFIG.email);
   }
+};
+
+export const renderEmail = () => {
+  document.querySelectorAll("[data-email]").forEach((element) => (element.textContent = CONFIG.email));
+  document.querySelectorAll("[data-email-link]").forEach((link) => (link.href = `mailto:${CONFIG.email}`));
 };
 
 export const initCopyEmailButtons = () => {

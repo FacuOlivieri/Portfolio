@@ -47,7 +47,8 @@ const handleSubmit = async (event, elements) => {
     const result = await deliverMessage(data);
     setStatus(elements, result.status, "ok");
     showToast(result.toast);
-    resetForm(elements);
+    // Con mailto no sabemos si el mensaje salió: se conserva lo escrito
+    if (result.sent) resetForm(elements);
   } catch {
     setStatus(elements, `No se pudo enviar. Escribime directo a ${CONFIG.email}.`, "err");
   } finally {

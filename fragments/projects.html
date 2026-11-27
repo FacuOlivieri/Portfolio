@@ -1,4 +1,3 @@
-<!-- EDITAR: reemplazá títulos, descripciones y los enlaces de GitHub por los de tus repos -->
 <section class="section" id="proyectos" aria-labelledby="t-proy">
   <header class="section__head reveal">
     <p class="eyebrow">@GetMapping("/proyectos")</p>
@@ -40,18 +39,18 @@
     <article class="project reveal">
       <div class="project__top">
         <span class="project__ico"><svg class="ico"><use href="#i-db"/></svg></span>
-        <span class="project__kind">API REST</span>
+        <span class="project__kind">Microservicios · En desarrollo</span>
       </div>
-      <h3 class="project__title">API de gestión de stock</h3>
+      <h3 class="project__title">Bruno Negro · E-commerce</h3>
       <p class="project__desc">
-        API REST con arquitectura MVC por capas para administrar productos, precios, stock y
-        clientes. Validaciones, manejo global de excepciones, DTOs y tests unitarios con
-        JUnit y Mockito.
+        Backend de un e-commerce dividido en microservicios de clientes, productos, carrito y
+        ventas, cada uno con su base de datos. Se descubren con Eureka, se comunican con
+        OpenFeign y el carrito suma Circuit Breaker y Retry en una primera versión.
       </p>
       <ul class="tags">
-        <li>Spring Boot</li><li>JPA</li><li>JUnit</li><li>Mockito</li>
+        <li>Spring Boot</li><li>Spring Cloud</li><li>Eureka</li><li>OpenFeign</li><li>Resilience4j</li><li>MySQL</li>
       </ul>
-      <a class="btn btn--repo" href="https://github.com/TU-USUARIO/api-gestion-stock" target="_blank" rel="noopener">
+      <a class="btn btn--repo" href="https://github.com/FacuOlivieri/Bruno-Negro" target="_blank" rel="noopener">
         <svg class="ico"><use href="#i-branch"/></svg> Ver en GitHub
         <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
       </a>
@@ -60,18 +59,18 @@
     <article class="project reveal">
       <div class="project__top">
         <span class="project__ico"><svg class="ico"><use href="#i-code"/></svg></span>
-        <span class="project__kind">Full stack</span>
+        <span class="project__kind">App local · En desarrollo</span>
       </div>
-      <h3 class="project__title">Presupuestador web</h3>
+      <h3 class="project__title">Conciliador</h3>
       <p class="project__desc">
-        Aplicación para armar presupuestos: búsqueda de productos, cálculo de totales con
-        descuentos e impuestos, historial por cliente y exportación. Frontend en JavaScript
-        puro consumiendo una API en Spring Boot.
+        Herramienta local para que contadores concilien archivos Excel y CSV (IVA, Ventas,
+        Compras, Ingresos Brutos). Ya avancé la carga y validación de archivos; la lógica de
+        conciliación está en desarrollo. No usa base de datos.
       </p>
       <ul class="tags">
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQL Server</li>
+        <li>Java</li><li>Spring Boot</li><li>Thymeleaf</li><li>Apache POI</li>
       </ul>
-      <a class="btn btn--repo" href="https://github.com/TU-USUARIO/presupuestador-web" target="_blank" rel="noopener">
+      <a class="btn btn--repo" href="https://github.com/FacuOlivieri/Conciliador" target="_blank" rel="noopener">
         <svg class="ico"><use href="#i-branch"/></svg> Ver en GitHub
         <svg class="ico ico--arrow"><use href="#i-arrow"/></svg>
       </a>

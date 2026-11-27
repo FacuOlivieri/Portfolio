@@ -7,7 +7,7 @@ import { initScrollSync } from "./scroll-sync.js";
 import { initRevealOnScroll } from "./reveal.js";
 import { initPortraitParallax } from "./portrait-parallax.js";
 import { initProjectCardsGlow } from "./project-cards.js";
-import { initCopyEmailButtons } from "./copy-email.js";
+import { initCopyEmailButtons, renderEmail } from "./copy-email.js";
 import { initContactForm } from "./contact-form.js";
 import { renderCurrentYear } from "./footer-year.js";
 
@@ -23,9 +23,15 @@ const initInteractions = () => {
   renderCurrentYear();
 };
 
+// Las secciones llegan por fetch, después de que el navegador buscó el #ancla
+const scrollToHashSection = () =>
+  document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: "instant" });
+
 const start = async () => {
   enableJsStyles();
   await loadFragments();
+  renderEmail();
+  scrollToHashSection();
   initInteractions();
 };
 
